@@ -1,0 +1,60 @@
+BOLD_BLACK='\033[1;32m'       # Black
+END_COLOR='\033[0m'
+##################################make -f Makefile.txt sim ############################
+SIM_TIME=3000
+
+#Generate a White passenger car every 1 second
+Dang_PARAMS=-e $(SIM_TIME) -p 1 --trip-attributes="type=\"Dangerous\""  --min-distance.fringe 500 --max-distance 5000 --additional-file vType_badr.add.xml 
+
+#Generate a bus every 30 seconds that has acceleration 0.8 m/s^2
+Normal_PARAMS=-e $(SIM_TIME) -p 1 --trip-attributes="type=\"Normal\"" --min-distance.fringe 500 --max-distance 5000 --additional-file vType_badr.add.xml 
+
+#Generate a truck every 15 seconds
+Slow_PARAMS=-e $(SIM_TIME) -p 1 --trip-attributes="type=\"Slow\""  --min-distance.fringe 500 --max-distance 5000 --additional-file vType_badr.add.xml 
+
+#Generate a delivery car every 30 seconds
+#DELIVERY_PARAMS=-e $(SIM_TIME) -p 30 --vehicle-class delivery --trip-attributes="color=\"115,211,230\""
+
+all: buildmap trips trace
+
+buildmap:
+	netconvert  --osm-files map.osm -o map.net.xml
+	polyconvert --net-file map.net.xml --osm-files map.osm -o map.poly.xml
+
+
+trace:
+	@echo "\033[34m Creating a SUMO trace \033[0m"
+	sumo -c Miami_Test6_1800V_IDM_warningcollect.sumocfg --fcd-output sumoTrace.xml
+
+	@echo "\033[92m Exporting to ns-2 trace \033[0m"
+	traceExporter.py --fcd-input sumoTrace.xml --ns2mobility-output ns2mobility.tcl
+
+trips:
+
+	@echo "\033[92m Making Trips \033[0m"
+
+	python randomTrips.py -n Miami_Test6_1800V_IDM_warningcollect.net.xml -r 1800v_Dange_routes.rou.xml  -o Dang_trips.xml $(Dang_PARAMS)
+	python randomTrips.py -n Miami_Test6_1800V_IDM_warningcollect.net.xml -r 1800v_Normal_routes.rou.xml  -o Normal_trips.xml $(Normal_PARAMS)
+	python randomTrips.py -n Miami_Test6_1800V_IDM_warningcollect.net.xml -r 1800v_Slow_routes.rou.xml  -o Slow_trips.xml $(Slow_PARAMS)
+	
+	@echo "\033[92m Creating unique IDs in route files \033[0m"
+
+	(Get-Content 1800v_Dange_routes.rou.xml) -replace 'vehicle id="', 'vehicle id="dang' | Set-Content 1800v_Dange_routes.rou.xml
+	(Get-Content 1800v_Normal_routes.rou.xml) -replace 'vehicle id="', 'vehicle id="normal' | Set-Content 1800v_Normal_routes.rou.xml
+	(Get-Content 1800v_Slow_routes.rou.xml) -replace 'vehicle id="', 'vehicle id="slow' | Set-Content 1800v_Slow_routes.rou.xml
+
+
+	#sed -i "s/vehicle id=\"/vehicle id=\"dang/g" 1800v_Dange_routes.rou.xml
+	#sed -i "s/vehicle id=\"/vehicle id=\"normal/g" 1800v_Normal_routes.rou.xml
+	#sed -i "s/vehicle id=\"/vehicle id=\"slow/g" 1800v_Slow_routes.rou.xml
+	
+sim:
+	sumo-gui Miami_Test6_1800V_IDM_warningcollect.sumocfg
+
+clean:
+	rm -f sumoTrace.xml ns2mobility.tcl
+	rm -f *.rou.xml *.rou.alt.xml *trips.xml
+	rm -f map.net.xml map.poly.xml
+
+
+#color the map : run code Miami_Test6_1800V_IDM_warningcollect.sumocfg

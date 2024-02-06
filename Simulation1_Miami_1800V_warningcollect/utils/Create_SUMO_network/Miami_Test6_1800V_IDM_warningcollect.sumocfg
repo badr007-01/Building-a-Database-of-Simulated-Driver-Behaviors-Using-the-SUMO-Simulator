@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2023-03-28 15:20:10 by Eclipse SUMO sumo Version v1_16_0+0391-7b1adc376f0
+
+
+<time>
+        <begin value="0"/>
+	<end value="600"/>
+    </time>
+-->
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="Miami_Test6_3000V_IDM_warningcollect.net.xml"/>
+        <route-files value="3000v_Normal_routes.rou.xml, 3000v_Dange_routes.rou.xml, 3000v_Slow_routes.rou.xml "/>
+        
+    </input>
+    <output> 
+        <!-- <full-output value="Collage_Test11.xml"/>     
+        <netstate-dump value="FullDataTest5_vTypeDistri11.xml"/> -->
+        <collision-output value="collision_miami11.xml"/>
+    </output>
+
+    <processing>
+        <ignore-route-errors value="true"/>
+    </processing>
+
+    <routing>
+        <device.rerouting.adaptation-steps value="18"/>
+        <device.rerouting.adaptation-interval value="10"/>
+    </routing>
+
+    <report>
+        <verbose value="true"/>
+        <duration-log.statistics value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <gui_only>
+        <gui-settings-file value="osm.view.xml"/>
+    </gui_only>
+    
+
+</configuration>

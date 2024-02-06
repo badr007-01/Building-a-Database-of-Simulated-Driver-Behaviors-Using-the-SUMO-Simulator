@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-01-15 12:52:19 by Eclipse SUMO GUI Version 1.12.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="Miami_Test8_800V_IDM_warningcollect.net.xml"/>
+        <route-files value="800v_Normal_routes.rou.xml,800v_Dange_routes.rou.xml,800v_Slow_routes.rou.xml"/>
+    </input>
+
+    <output>
+        <collision-output value="collision_miami11.xml"/>
+    </output>
+
+    <processing>
+        <ignore-route-errors value="true"/>
+        <collision.action value="warn"/>
+        <collision.stoptime value="40"/>
+    </processing>
+
+    <routing>
+        <device.rerouting.adaptation-steps value="18"/>
+        <device.rerouting.adaptation-interval value="10"/>
+    </routing>
+
+    <report>
+        <verbose value="true"/>
+        <xml-validation value="never"/>
+        <xml-validation.routes value="never"/>
+        <duration-log.statistics value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <traci_server>
+        <remote-port value="42129"/>
+    </traci_server>
+
+    <gui_only>
+        <gui-settings-file value="osm.view.xml"/>
+    </gui_only>
+
+</configuration>
+-->
+
+<collisions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/collision_file.xsd">
+    <collision time="191.00" type="junction" lane=":10255123919_3_0" pos="3.46" collider="dang19" victim="dang11" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="1.34" victimSpeed="0.00"/>
+    <collision time="326.00" type="collision" lane="-190525148#0_0" pos="148.79" collider="dang30" victim="dang16" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="1.47" victimSpeed="0.00"/>
+    <collision time="398.00" type="junction" lane=":7287559083_0_1" pos="2.94" collider="dang11" victim="dang56" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="1.45" victimSpeed="0.00"/>
+    <collision time="438.00" type="collision" lane="134544934#3_0" pos="57.84" collider="dang37" victim="dang48" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="1.41" victimSpeed="0.00"/>
+    <collision time="445.00" type="junction" lane=":7287559083_0_1" pos="2.94" collider="dang11" victim="dang56" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="445.00" type="collision" lane="190532676#4_1" pos="46.77" collider="dang30" victim="dang16" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="1.38" victimSpeed="0.00"/>
+    <collision time="450.00" type="junction" lane=":7287559083_0_0" pos="2.93" collider="dang93" victim="dang92" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="1.47" victimSpeed="0.00"/>
+    <collision time="486.00" type="collision" lane="134544934#3_0" pos="70.25" collider="dang37" victim="dang48" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="1.41" victimSpeed="0.00"/>
+    <collision time="501.00" type="collision" lane="1123835883#0_1" pos="17.07" collider="dang69" victim="dang81" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.92" victimSpeed="0.00"/>
+    <collision time="512.00" type="collision" lane="1123338339_1" pos="19.34" collider="dang90" victim="dang107" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="1.39" victimSpeed="0.00"/>
+    <collision time="521.00" type="collision" lane="1124152025_0" pos="18.80" collider="dang92" victim="dang56" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="2.31" victimSpeed="0.00"/>
+    <collision time="533.00" type="collision" lane="134544934#3_0" pos="70.25" collider="dang37" victim="dang48" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="548.00" type="collision" lane="1123835883#0_1" pos="17.07" collider="dang69" victim="dang81" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="553.00" type="collision" lane="-190532694#10_0" pos="30.26" collider="dang96" victim="normal88" colliderType="Dangerous" victimType="Normal" colliderSpeed="1.38" victimSpeed="0.08"/>
+    <collision time="558.00" type="collision" lane="159482674_1" pos="22.72" collider="dang22" victim="dang118" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="1.43" victimSpeed="0.00"/>
+    <collision time="580.00" type="collision" lane="134544934#3_0" pos="70.25" collider="dang37" victim="dang48" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="596.00" type="collision" lane="1124152019#1_0" pos="29.44" collider="dang127" victim="normal81" colliderType="Dangerous" victimType="Normal" colliderSpeed="1.40" victimSpeed="0.04"/>
+    <collision time="647.00" type="collision" lane="-190532694#10_0" pos="30.77" collider="dang132" victim="slow88" colliderType="Dangerous" victimType="Slow" colliderSpeed="1.83" victimSpeed="0.00"/>
+    <collision time="698.00" type="collision" lane="764854942_1" pos="32.26" collider="dang56" victim="dang92" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="1.33" victimSpeed="0.00"/>
+    <collision time="745.00" type="collision" lane="764854942_1" pos="32.26" collider="dang56" victim="dang92" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="751.00" type="collision" lane="1124152029_2" pos="29.97" collider="dang81" victim="dang127" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="2.27" victimSpeed="0.00"/>
+    <collision time="762.00" type="collision" lane="128709034#1_0" pos="28.40" collider="dang158" victim="slow145" colliderType="Dangerous" victimType="Slow" colliderSpeed="1.48" victimSpeed="0.00"/>
+    <collision time="792.00" type="collision" lane="764854942_1" pos="32.26" collider="dang56" victim="dang92" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="796.00" type="collision" lane="1124152029_0" pos="29.97" collider="dang154" victim="dang69" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="1.37" victimSpeed="0.00"/>
+    <collision time="798.00" type="collision" lane="1124152029_2" pos="29.97" collider="dang81" victim="dang127" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="839.00" type="collision" lane="764854942_1" pos="32.26" collider="dang56" victim="dang92" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="840.00" type="collision" lane="764854938#1_0" pos="31.09" collider="dang175" victim="dang48" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="1.44" victimSpeed="0.00"/>
+    <collision time="842.00" type="collision" lane="1124152029_0" pos="24.50" collider="dang120" victim="dang154" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="843.00" type="collision" lane="1124152029_0" pos="29.97" collider="dang154" victim="dang69" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="845.00" type="collision" lane="1124152029_2" pos="29.97" collider="dang81" victim="dang127" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="886.00" type="collision" lane="764854942_1" pos="32.26" collider="dang56" victim="dang92" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="889.00" type="collision" lane="1124152029_0" pos="24.50" collider="dang120" victim="dang154" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="890.00" type="collision" lane="1124152029_0" pos="29.97" collider="dang154" victim="dang69" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="892.00" type="collision" lane="1124152029_2" pos="29.97" collider="dang81" victim="dang127" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="933.00" type="collision" lane="764854942_1" pos="32.26" collider="dang56" victim="dang92" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="936.00" type="collision" lane="1124152029_0" pos="24.50" collider="dang120" victim="dang154" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="937.00" type="collision" lane="1124152029_0" pos="29.97" collider="dang154" victim="dang69" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="939.00" type="collision" lane="1124152029_2" pos="29.97" collider="dang81" victim="dang127" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="980.00" type="collision" lane="764854942_1" pos="32.26" collider="dang56" victim="dang92" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="982.00" type="collision" lane="1124152029_1" pos="18.74" collider="dang204" victim="normal81" colliderType="Dangerous" victimType="Normal" colliderSpeed="1.49" victimSpeed="0.00"/>
+    <collision time="983.00" type="collision" lane="1124152029_0" pos="24.50" collider="dang120" victim="dang154" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="984.00" type="collision" lane="1124152029_0" pos="29.97" collider="dang154" victim="dang69" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="1027.00" type="collision" lane="764854942_1" pos="32.26" collider="dang56" victim="dang92" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="1029.00" type="collision" lane="1124152029_1" pos="18.74" collider="dang204" victim="normal81" colliderType="Dangerous" victimType="Normal" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="1082.00" type="collision" lane="764854942_1" pos="32.26" collider="dang154" victim="dang69" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="1.35" victimSpeed="0.00"/>
+    <collision time="1082.00" type="collision" lane="134544909_1" pos="7.94" collider="dang191" victim="normal205" colliderType="Dangerous" victimType="Normal" colliderSpeed="1.48" victimSpeed="0.00"/>
+    <collision time="1125.00" type="collision" lane="1124152025_0" pos="18.64" collider="dang228" victim="dang229" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="1.09" victimSpeed="0.00"/>
+    <collision time="1129.00" type="collision" lane="764854942_1" pos="32.26" collider="dang154" victim="dang69" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="1136.00" type="junction" lane=":7241294713_4_0" pos="7.74" collider="dang176" victim="normal176" colliderType="Dangerous" victimType="Normal" colliderSpeed="1.37" victimSpeed="0.09"/>
+    <collision time="1172.00" type="collision" lane="1124152025_0" pos="18.64" collider="dang228" victim="dang229" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="1174.00" type="collision" lane="764854942_1" pos="21.71" collider="dang194" victim="dang204" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="2.80" victimSpeed="0.00"/>
+    <collision time="1219.00" type="collision" lane="1124152025_0" pos="18.64" collider="dang228" victim="dang229" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="1248.00" type="collision" lane="-190532694#10_0" pos="29.49" collider="dang283" victim="slow187" colliderType="Dangerous" victimType="Slow" colliderSpeed="2.55" victimSpeed="0.33"/>
+    <collision time="1437.00" type="collision" lane="-135310823#5_0" pos="181.65" collider="dang285" victim="dang283" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="1.41" victimSpeed="0.00"/>
+    <collision time="1484.00" type="collision" lane="-135310823#5_0" pos="181.65" collider="dang285" victim="dang283" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="1533.00" type="junction" lane=":9982608244_0_0" pos="21.37" collider="dang284" victim="slow194" colliderType="Dangerous" victimType="Slow" colliderSpeed="1.42" victimSpeed="0.01"/>
+    <collision time="1535.00" type="junction" lane=":9982608244_0_0" pos="15.98" collider="dang291" victim="dang284" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="1.09" victimSpeed="0.00"/>
+    <collision time="1621.00" type="collision" lane="-82541672#2_0" pos="46.25" collider="dang349" victim="slow374" colliderType="Dangerous" victimType="Slow" colliderSpeed="1.28" victimSpeed="0.00"/>
+    <collision time="1641.00" type="collision" lane="-1147831879#1_1" pos="27.04" collider="dang330" victim="normal365" colliderType="Dangerous" victimType="Normal" colliderSpeed="1.07" victimSpeed="0.00"/>
+    <collision time="1688.00" type="collision" lane="-1147831879#1_1" pos="27.04" collider="dang330" victim="normal365" colliderType="Dangerous" victimType="Normal" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="1735.00" type="collision" lane="-1147831879#1_1" pos="27.04" collider="dang330" victim="normal365" colliderType="Dangerous" victimType="Normal" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="1782.00" type="collision" lane="-1147831879#1_1" pos="27.04" collider="dang330" victim="normal365" colliderType="Dangerous" victimType="Normal" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="1899.00" type="collision" lane="1147831884_1" pos="17.56" collider="dang404" victim="normal438" colliderType="Dangerous" victimType="Normal" colliderSpeed="1.49" victimSpeed="0.01"/>
+    <collision time="1936.00" type="collision" lane="773014399#1_1" pos="53.03" collider="dang469" victim="slow469" colliderType="Dangerous" victimType="Slow" colliderSpeed="1.32" victimSpeed="0.00"/>
+    <collision time="1946.00" type="collision" lane="1147831884_1" pos="17.56" collider="dang404" victim="normal438" colliderType="Dangerous" victimType="Normal" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="1967.00" type="collision" lane="124955245#8_0" pos="200.14" collider="dang347" victim="dang293" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="1.05" victimSpeed="0.00"/>
+    <collision time="2004.00" type="collision" lane="1020763627_0" pos="10.61" collider="dang454" victim="slow399" colliderType="Dangerous" victimType="Slow" colliderSpeed="5.48" victimSpeed="1.15"/>
+    <collision time="2011.00" type="collision" lane="11142622#15_0" pos="120.35" collider="dang441" victim="dang438" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="2.33" victimSpeed="0.00"/>
+    <collision time="2118.00" type="collision" lane="1119782933_1" pos="14.02" collider="dang489" victim="dang479" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="1.04" victimSpeed="0.00"/>
+    <collision time="2189.00" type="collision" lane="1089772295#0_0" pos="35.83" collider="dang506" victim="normal506" colliderType="Dangerous" victimType="Normal" colliderSpeed="2.14" victimSpeed="0.30"/>
+    <collision time="2385.00" type="collision" lane="387359098#1_0" pos="58.15" collider="dang542" victim="dang504" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="1.30" victimSpeed="0.00"/>
+    <collision time="2522.00" type="collision" lane="-190545232#13_1" pos="2.06" collider="dang479" victim="dang538" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="1.50" victimSpeed="0.00"/>
+    <collision time="2890.00" type="collision" lane="-83067368#0_0" pos="20.26" collider="dang614" victim="dang646" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="1.52" victimSpeed="0.00"/>
+    <collision time="2891.00" type="collision" lane="-83067368#0_0" pos="14.96" collider="dang659" victim="dang614" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="1.87" victimSpeed="0.00"/>
+    <collision time="2982.00" type="junction" lane=":7241294713_4_0" pos="8.53" collider="dang696" victim="dang690" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="2.19" victimSpeed="0.00"/>
+    <collision time="2988.00" type="collision" lane="-287326472_0" pos="18.49" collider="dang689" victim="dang667" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="2.06" victimSpeed="0.00"/>
+    <collision time="3005.00" type="collision" lane="1000521230_0" pos="32.40" collider="dang716" victim="dang614" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="2.00" victimSpeed="0.00"/>
+    <collision time="3035.00" type="collision" lane="-287326472_0" pos="18.49" collider="dang689" victim="dang667" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="3052.00" type="collision" lane="1000521230_0" pos="32.40" collider="dang716" victim="dang614" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="3064.00" type="collision" lane="343709669#3_1" pos="55.53" collider="dang693" victim="dang734" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="2.07" victimSpeed="0.00"/>
+    <collision time="3099.00" type="collision" lane="1000521230_0" pos="32.40" collider="dang716" victim="dang614" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="3111.00" type="collision" lane="343709669#3_1" pos="55.53" collider="dang693" victim="dang734" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="3146.00" type="collision" lane="1000521230_0" pos="32.40" collider="dang716" victim="dang614" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="3158.00" type="collision" lane="343709669#3_1" pos="55.53" collider="dang693" victim="dang734" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="3193.00" type="collision" lane="1000521230_0" pos="32.40" collider="dang716" victim="dang614" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="3205.00" type="collision" lane="343709669#3_1" pos="55.53" collider="dang693" victim="dang734" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+    <collision time="3240.00" type="collision" lane="1000521230_0" pos="32.40" collider="dang716" victim="dang614" colliderType="Dangerous" victimType="Dangerous" colliderSpeed="0.00" victimSpeed="0.00"/>
+</collisions>
