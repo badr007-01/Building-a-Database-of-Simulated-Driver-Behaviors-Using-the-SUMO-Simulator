@@ -62,14 +62,16 @@ This project simulates the behavior of drivers in a city using the SUMO simulato
    ```bash
    git clone https://github.com/your-repository-url
    ```
-2. **Build and Installation SUMO and NETEDIT**. For installation instructions, see the [Build and Installation section](#-Build-and-Installation-SUMO)
+2. **Build and Installation SUMO and NETEDIT**. For installation instructions, see the [Build and Installation section](https://sumo.dlr.de/docs/Installing/index.html)
 
-3. Navigate to the simulation directory:
-  ```bash
-  cd Simulation1_Miami_1800V_warningcollect
-  ```
+3. **Installation NETEDIT**. For installation instructions, see the [Usage Description](https://sumo.dlr.de/docs/Netedit/index.html)
 
-4. Run the simulation using:
+4. Navigate to the simulation directory:
+   ```bash
+   cd Simulation1_Miami_1800V_warningcollect
+   ```
+
+5. Run the simulation using:
    ```bash
    python main.py
    ```
@@ -91,56 +93,6 @@ The datasets in the `Datasets_SUMO_Driver_behavior` directory include both raw d
 
 ## 🌍 Route and Network Maps
 The `Miami1.png` and `Miami2.png` images provide visual representations of the simulation's route and network maps.
-
-
-
-
-<a href="https://sumo.dlr.de/docs"><p align="center"><img width=50% src="https://raw.githubusercontent.com/eclipse/sumo/main/docs/web/docs/images/sumo-logo.svg"></p></a>
-
-What is SUMO
-------------
-
-["Simulation of Urban MObility" (SUMO)](https://sumo.dlr.de/) is an open source,
-highly portable, microscopic traffic simulation package designed to handle
-large road networks and different modes of transport.
-
-<p align="center"><img width=70% src="https://raw.githubusercontent.com/eclipse/sumo/main/docs/web/docs/images/multiple-screenshots.png"></p>
-
-It is mainly developed by employees of the [Institute of Transportation Systems
-at the German Aerospace Center](https://www.dlr.de/ts/en/).
-
-
-Build and Installation SUMO 
-----------------------
-
-For Windows we provide pre-compiled binaries and CMake files to generate Visual Studio projects.
-If you want to develop under Windows, please also clone the dependent libraries using:
-
-```
-git clone --recursive https://github.com/DLR-TS/SUMOLibraries
-```
-
-If you're using Linux, you should have a look whether your distribution already contains sumo.
-There is also a [ppa for ubuntu users](https://launchpad.net/~sumo) and an
-[open build service instance](https://build.opensuse.org/project/show/science:dlr).
-If you want to build SUMO yourself, the steps for ubuntu are:
-
-```
-sudo apt-get install cmake python g++ libxerces-c-dev libfox-1.6-dev libgdal-dev libproj-dev libgl2ps-dev swig
-cd <SUMO_DIR> # please insert the correct directory name here
-export SUMO_HOME="$PWD"
-cmake -B build .
-cmake --build build -j$(nproc)
-```
-
-For [detailed build instructions, have a look at our Documentation](https://sumo.dlr.de/docs/Developer/Main.html#build_instructions).
-
-
-SUMO Documentation
----------------
-- The main documentation is at [sumo.dlr.de/docs](https://sumo.dlr.de/docs). Note that this tracks the [development version](https://sumo.dlr.de/docs/FAQ.html#why_does_sumo_not_behave_as_documented_in_this_wiki).
-- A mirror of the main documentation is at [sumo.sourceforge.net/docs](https://sumo.sourceforge.net/docs).
-- An offline version of the documentation is part of every release and can be accessed via `docs/userdoc/index.html`.
 
 
 ## 📚 References
