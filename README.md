@@ -49,7 +49,8 @@
     │   └── main.py            # Main simulation script (run with `python main.py`)
     │
     ├── Miami1.png             # Miami route map
-    └── Miami2.png             # Miami network map
+    ├── Miami2.png             # Miami network map
+    └── published_paper.pdf    # The published scientific article
 
     ```
 
