@@ -4,6 +4,10 @@
   <img src="Miami2.png" alt="Miami Route Map" width="400"/>
 </div>
 
+
+## 📄 Project Description
+This project simulates the behavior of drivers in a city using the SUMO simulator, generating datasets that capture various driving behaviors (slow, normal, dangerous). The datasets are used for further analysis and to train machine learning models (MLP, SVM, KNN) for behavior classification.
+
 ## 📂 Repository Organization
 ---------------
     ```
