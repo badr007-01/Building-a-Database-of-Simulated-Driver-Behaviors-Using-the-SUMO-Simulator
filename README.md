@@ -65,14 +65,14 @@ This project simulates the behavior of drivers in a city using the SUMO simulato
 2. **Build and Installation SUMO and NETEDIT**. For installation instructions, see the [Build and Installation section](#-Build-and-Installation-SUMO)
 
 3. Navigate to the simulation directory:
-    ```bash
+  ```bash
   cd Simulation1_Miami_1800V_warningcollect
   ```
 
 4. Run the simulation using:
-    ```bash
-    python main.py
-    ```
+   ```bash
+   python main.py
+   ```
 
 
 
