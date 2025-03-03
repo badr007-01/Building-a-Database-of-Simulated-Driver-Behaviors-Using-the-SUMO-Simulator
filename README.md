@@ -6,7 +6,32 @@
 
 
 ## 📄 Project Description
-This project simulates the behavior of drivers in a city using the SUMO simulator, generating datasets that capture various driving behaviors (slow, normal, dangerous). The datasets are used for further analysis and to train machine learning models (MLP, SVM, KNN) for behavior classification.
+
+This project focuses on classifying driver behaviors to enhance road safety in smart cities and support **Pay-As-You-Drive (PAYD)** insurance services. Using the **SUMO (Simulation of Urban Mobility)** simulator, we generated a database of simulated driving styles based on the **Intelligent Driver Model (IDM)**. The simulated driving behaviors are categorized into three classes:
+
+- Slow
+- Normal
+- Dangerous
+
+The simulations were performed on a realistic map of **Miami**, which includes various road types and traffic signs to create realistic driving scenarios. Through **TraCI (Traffic Control Interface)**, we collected detailed vehicle data, including:
+
+- Vehicle trajectories
+- Traffic violation alerts (such as speeding, red-light running, etc.)
+
+This data was then used to train and evaluate four machine learning models to classify driver behaviors:
+
+1. **Gradient Boosted Decision Trees (GBDT)**
+2. **K-Nearest Neighbors (KNN)**
+3. **Multi-layer Perceptron (MLP)**
+4. **Support Vector Machines (SVM)**
+
+The goal of the project is to demonstrate the feasibility of the **AlertDang Driver Profiling** method, which aims to detect risky driving patterns in real-time and support applications such as road safety monitoring and dynamic insurance pricing.
+
+## Deliverables:
+- Full source code for simulation, data collection, and machine learning pipelines.
+- A labeled dataset of simulated driver behaviors.
+- Performance evaluation of the implemented models.
+- Discussion of the method’s benefits, current limitations, and possible future improvements.
 
 
 ## 🚀 Getting Started
