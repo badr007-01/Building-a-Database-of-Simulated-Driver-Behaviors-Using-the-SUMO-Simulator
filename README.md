@@ -1,6 +1,8 @@
 # 📊 Building a Database of Simulated Driver Behaviors Using the SUMO Simulator
 
-<img src="Miami1.png" alt="Miami Route Map" width="400"/>
+<div align="center">
+  <img src="Miami2.png" alt="Miami Route Map" width="400"/>
+</div>
 
 ## 📂 Repository Organization
 ---------------
