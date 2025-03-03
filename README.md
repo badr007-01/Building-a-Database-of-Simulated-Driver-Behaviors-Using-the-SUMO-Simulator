@@ -69,6 +69,10 @@ This project simulates the behavior of drivers in a city using the SUMO simulato
 4. Navigate to the simulation directory:
    ```bash
    cd Simulation1_Miami_1800V_warningcollect
+
+   or
+   
+   cd Simulation2_Miami_800V_warningcollect
    ```
 
 5. Run the simulation using:
