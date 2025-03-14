@@ -105,7 +105,7 @@ Below are the references used in the project.
     │   │   ├── 1800V_DS_Separated_warning_V1.csv   # Warning dataset of 1800 vehicles for each behavior
     │   │   └── 1800V_DS_Sum_warning_V1.csv         # Warning dataset with sums of 1800 vehicles for each behavior
     │   │
-    │   └── Plotting_Output_dataset                 # Output figures and plots from datasets
+    │   └── Plotting_Output_dataset                 # Total Warning dataset with of 1800 /800 vehicles for each behavior
     │
     ├── /MLP_SVM_KNN_Driver_Behavior       # Machine learning models for driver behavior classification
     │   ├── Dataset_Miami_800V_IDM_warningcollect  # Dataset used for training ML models
